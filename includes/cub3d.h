@@ -6,7 +6,7 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 17:08:54 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/14 13:53:53 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 14:35:47 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@
 
 /* MINIMAP MACROS */
 # define MMAP_PIXEL_SIZE 128
-# define MMAP_VIEW_DIST 6
+# define MMAP_VIEW_DIST 4
 # define MMAP_COLOR_PLAYER  0xFFFF0000  // Red
 # define MMAP_COLOR_WALL    0xFF000000  // Black
 # define MMAP_COLOR_FLOOR   0xFFFFFFFF  // White

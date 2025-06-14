@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: achamsin <achamsin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 11:53:12 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/09 19:03:42 by achamsin           ###   ########.fr       */
+/*   Created: 2025/06/14 14:37:58 by achamsin          #+#    #+#             */
+/*   Updated: 2025/06/14 14:38:20 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,9 @@ void			ft_skip_spacenl(const char *str, int *i);
 void			ft_skip_space(const char *str, int *i);
 
 // GET NEXT LINE
-char	*get_next_line(int fd);
-char	*f_strchr(char *s, int c);
-char	*f_strdup(char *s1);
-char	*f_strjoin(char *s1, char *s2);
+char			*get_next_line(int fd);
+char			*f_strchr(char *s, int c);
+char			*f_strdup(char *s1);
+char			*f_strjoin(char *s1, char *s2);
 
 #endif
