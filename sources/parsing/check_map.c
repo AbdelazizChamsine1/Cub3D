@@ -6,7 +6,7 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 17:07:10 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/04 17:07:11 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 13:55:22 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	check_map_elements(t_data *data, char **map_tab)
 	return (SUCCESS);
 }
 
-static int	check_position_is_valid(t_data *data, char **map_tab)
+static int	check_valid_position(t_data *data, char **map_tab)
 {
 	int	i;
 	int	j;
@@ -81,7 +81,7 @@ static int	check_player_position(t_data *data, char **map_tab)
 		}
 		i++;
 	}
-	if (check_position_is_valid(data, map_tab) == FAILURE)
+	if (check_valid_position(data, map_tab) == FAILURE)
 		return (err_msg(data->mapinfo.path, ERR_PLAYER_POS, FAILURE));
 	return (SUCCESS);
 }
@@ -112,7 +112,7 @@ int	check_map_validity(t_data *data, char **map_tab)
 {
 	if (!data->map)
 		return (err_msg(data->mapinfo.path, ERR_MAP_MISSING, FAILURE));
-	if (check_map_sides(&data->mapinfo, map_tab) == FAILURE)
+	if (check_left_or_right(&data->mapinfo, map_tab) == FAILURE)
 		return (err_msg(data->mapinfo.path, ERR_MAP_NO_WALLS, FAILURE));
 	if (data->mapinfo.height < 3)
 		return (err_msg(data->mapinfo.path, ERR_MAP_TOO_SMALL, FAILURE));

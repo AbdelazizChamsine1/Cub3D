@@ -6,7 +6,7 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 17:08:54 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/14 11:48:20 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 13:53:53 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -259,7 +259,7 @@ int		check_textures_validity(t_data *data, t_texinfo *textures);
 int		check_map_validity(t_data *data, char **map_tab);
 
 /* parsing/check_map_borders.c */
-int		check_map_sides(t_mapinfo *map, char **map_tab);
+int		check_left_or_right(t_mapinfo *map, char **map_tab);
 
 /* parsing/parsing_utils.c */
 int		is_a_white_space(char c);

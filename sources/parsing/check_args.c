@@ -6,7 +6,7 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 17:06:58 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/04 17:07:00 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 13:52:14 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 **	 it exists and isn't a folder instead of a file.
 */
 
-static bool	is_dir(char *arg)
+static bool	is_directory(char *arg)
 {
 	int		fd;
 	bool	ret;
@@ -60,7 +60,7 @@ int	check_file(char *arg, bool cub)
 {
 	int	fd;
 
-	if (is_dir(arg))
+	if (is_directory(arg))
 		return (err_msg(arg, ERR_FILE_IS_DIR, FAILURE));
 	fd = open(arg, O_RDONLY);
 	if (fd == -1)

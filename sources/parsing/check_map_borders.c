@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_map_borders.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alexa <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 22:18:01 by alexa             #+#    #+#             */
-/*   Updated: 2023/02/09 22:18:03 by alexa            ###   ########.fr       */
+/*   Updated: 2025/06/14 13:53:53 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	check_top_or_bottom(char **map_tab, int i, int j)
 	return (SUCCESS);
 }
 
-int	check_map_sides(t_mapinfo *map, char **map_tab)
+int	check_left_or_right(t_mapinfo *map, char **map_tab)
 {
 	int	i;
 	int	j;
@@ -40,7 +40,7 @@ int	check_map_sides(t_mapinfo *map, char **map_tab)
 	while (i < (map->height - 1))
 	{
 		j = ft_strlen(map_tab[i]) - 1;
-		if (map_tab[i][j] != '1')
+		if (map_tab[i][0] != '1' || map_tab[i][j] != '1')
 			return (FAILURE);
 		i++;
 	}

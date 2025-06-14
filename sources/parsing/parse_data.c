@@ -6,13 +6,13 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 17:07:36 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/04 17:07:38 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 13:58:36 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-static int	get_number_of_lines(char *path)
+static int	get_lines_number(char *path)
 {
 	int		fd;
 	char	*line;
@@ -69,7 +69,7 @@ void	parse_data(char *path, t_data *data)
 	i = 0;
 	row = 0;
 	column = 0;
-	data->mapinfo.line_count = get_number_of_lines(path);
+	data->mapinfo.line_count = get_lines_number(path);
 	data->mapinfo.path = path;
 	data->mapinfo.file = ft_calloc(data->mapinfo.line_count \
 			+ 1, sizeof(char *));
