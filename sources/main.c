@@ -6,7 +6,7 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/14 11:12:22 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/14 11:34:52 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 14:27:49 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,7 @@
 
 static void	print_controls(void)
 {
-	printf(CYAN "\n");
-	printf("░█▀▀░█░█░█▀▄░▀▀█░█▀▄░░░█▀▀░█▀█░█▀█░▀█▀░█▀▄░█▀█░█░░░█▀▀\n");
-	printf("░█░░░█░█░█▀▄░░▀▄░█░█░░░█░░░█░█░█░█░░█░░█▀▄░█░█░█░░░▀▀█\n");
-	printf("░▀▀▀░▀▀▀░▀▀░░▀▀░░▀▀░░░░▀▀▀░▀▀▀░▀░▀░░▀░░▀░▀░▀▀▀░▀▀▀░▀▀▀\n");
-	printf(RESET "\n");
+	printf(CYAN "\t########################################\n");
 	printf(CYAN "\tW" RESET ": move forward\t");
 	printf(CYAN "\tS" RESET ": move backward\n");
 	printf(CYAN "\tA" RESET ": strafe left\t");
@@ -27,6 +23,7 @@ static void	print_controls(void)
 	printf(CYAN "\t>" RESET ": rotate right\n");
 	if (BONUS)
 		printf(CYAN "\tMouse" RESET ": rotate view\n");
+	printf(CYAN "\t########################################\n");
 	printf("\n");
 }
 
