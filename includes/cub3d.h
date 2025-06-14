@@ -6,7 +6,7 @@
 /*   By: achamsin <achamsin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 17:08:54 by achamsin          #+#    #+#             */
-/*   Updated: 2025/06/14 11:29:51 by achamsin         ###   ########.fr       */
+/*   Updated: 2025/06/14 11:48:20 by achamsin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,6 @@
 #  define BONUS 1
 # endif
 
-/* # define WIN_WIDTH 960 */
-/* # define WIN_HEIGHT 720 */
 # define WIN_WIDTH 640
 # define WIN_HEIGHT 480
 
@@ -56,18 +54,18 @@
 #  define O_DIRECTORY 00200000
 # endif
 
-# define MOVESPEED 0.0125
-# define ROTSPEED 0.015
+# define MOVESPEED 0.0225
+# define ROTSPEED 0.0225
 
 # define DIST_EDGE_MOUSE_WRAP 20
 
 /* MINIMAP MACROS */
 # define MMAP_PIXEL_SIZE 128
-# define MMAP_VIEW_DIST 4
-# define MMAP_COLOR_PLAYER 0x0F0F00
-# define MMAP_COLOR_WALL 0x808080
-# define MMAP_COLOR_FLOOR 0xE6E6E6
-# define MMAP_COLOR_SPACE 0x404040
+# define MMAP_VIEW_DIST 6
+# define MMAP_COLOR_PLAYER  0xFFFF0000  // Red
+# define MMAP_COLOR_WALL    0xFF000000  // Black
+# define MMAP_COLOR_FLOOR   0xFFFFFFFF  // White
+# define MMAP_COLOR_SPACE  0xFF888888   // Gray
 
 // ERROR MESSAGES
 # define ERR_USAGE "usage: ./cub3d <path/to/map.cub>"
